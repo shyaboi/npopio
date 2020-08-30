@@ -65,14 +65,11 @@
     <h1 id="npop-parameters">nPoP Parameters</h1>
     <p>You can pass in the following parameters into the npop function(example shows default parameters):</p>
     <pre><code>npop(<span class="hljs-name">
-        dexyGet</span>(),
-        PORT<span class="hljs-symbol">:process</span>.env.PORT||<span class="hljs-number">3333</span>,
-        route1:<span class="hljs-string">"/"</span>,
-        route2:<span class="hljs-string">"/index"</span>,
-        route3:<span class="hljs-string">"/dexy"</span>
-        (<span class="hljs-name">path</span> to index.hmtl)=<span class="hljs-string">"../../views/index.html"</span>,
-        (<span class="hljs-name">path</span> to <span class="hljs-number">2</span>nd hmtlpage)=<span class="hljs-string">"../../views/index2.html"</span>,
-        (<span class="hljs-name">not</span> currently in use)=<span class="hljs-string">"string"</span>
+      homeGet(), //this parameter can be fed a function containing request and response from express.//
+      indexGet(), //this parameter can be fed a function containing request and response from express.//
+      dexyGet(), //this parameter can be fed a function containing request and response from express.//
+      PORT:process.env.PORT||3333,
+      routeArray=[route1="/",route2="/index",route3='/dexy']
     )</code></pre>
     <p>An example of leaving the default values and only changing the later paramerters:</p>
     <pre><code><span class="hljs-keyword">const</span> PoP = <span class="hljs-built_in">require</span>(<span class="hljs-string">"npop"</span>);
