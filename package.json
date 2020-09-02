@@ -2,7 +2,7 @@
   "description": "My new site made with nPoP",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "pop": "start http://localhost:3333 && npm start"
   },
   "keywords": [
