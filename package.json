@@ -12,8 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "muhpackage": "^1.0.91",
     "nodemon": "^2.0.4",
-    "npop": "0.0.19"
+    "npop": "0.0.25"
   }
 }
