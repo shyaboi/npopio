@@ -4,16 +4,27 @@
  position: absolute;
  font-size: 98px;
  top: 5vw;
- right: 45vw;
+ right: 35vw;
  overflow: hidden;
  color: blue;
 }
+
+@media (max-width: 1200px) {
+  #ss {
+    top: 25vw;
+    right: 23vw;
+    }
+  }
 
 #mainContainer{
  padding: 3rem 26rem 26rem 26rem;
 }
 
-
+@media (max-width: 1200px) {
+#mainContainer {
+  padding: 3rem 4rem 4rem 4rem;
+  }
+}
 
 body::-webkit-scrollbar {
    display: none;
